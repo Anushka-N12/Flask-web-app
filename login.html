@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+    <meta charset= "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="_" content="___" />
+
+    <link rel="stylesheet", href="login.css">
+
+    <!-- Google Font type -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Login Page</title> 
+    </head>
+    <body>
+        <main>
+            <div id="all">
+                <h4>
+                    <span id="login" onclick="login()">Login</span>&nbsp&nbsp|&nbsp&nbsp<span id="signup" onclick="signup()">Sign Up</span>
+                </h4>
+                <form method="post" action="__">
+                    <fieldset id="inps">
+                      <label class="normal" for="email"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+                        <input id="email" type="email" required placeholder="Email ID" /></label>
+                      <label class="normal pad" for="password"><i class="fa fa-lock fa-lg" aria-hidden="true"></i>&nbsp&nbsp
+                        <input id="password" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" 
+                        title="Please enter atleast 8 characters, with one uppercase letter, one lowercase letter & one number" 
+                        required placeholder="Password" /></label>
+                        <label for="fname" id="fname"><i class="fa fa-user fa-lg" aria-hidden="true"></i>&nbsp&nbsp
+                          <input id="fnamei" type="fnamei" required placeholder="Full Name" /></label>
+                    </fieldset>
+                    <input id="submit" type="submit" value="Submit" />
+            </div>
+        </main>
+        <script src="login.js"></script>
+    </body>
+</html>
