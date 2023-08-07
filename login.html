@@ -25,15 +25,27 @@
                 </h4>
                 <form method="post" action="__">
                     <fieldset id="inps">
-                      <label class="normal" for="email"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
-                        <input id="email" type="email" required placeholder="Email ID" /></label>
-                      <label class="normal pad" for="password"><i class="fa fa-lock fa-lg" aria-hidden="true"></i>&nbsp&nbsp
-                        <input id="password" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" 
-                        title="Please enter atleast 8 characters, with one uppercase letter, one lowercase letter & one number" 
-                        required placeholder="Password" /></label>
-                        <label for="fname" id="fname"><i class="fa fa-user fa-lg" aria-hidden="true"></i>&nbsp&nbsp
-                          <input id="fnamei" type="fnamei" required placeholder="Full Name" /></label>
-                    </fieldset>
+                      <div class="part" id="part1">
+                        <label class="normal" for="email"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+                          <input id="email" type="email" required placeholder="Email ID" /></label>
+                        <label class="normal" for="password"><i class="fa fa-lock fa-lg" aria-hidden="true"></i>&nbsp&nbsp
+                          <input id="password" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" 
+                          title="Please enter atleast 8 characters, with one uppercase letter, one lowercase letter & one number" 
+                          required placeholder="Password" /></label>
+                        <label class="normal newl" for="password"><i class="fa fa-lock fa-lg" aria-hidden="true"></i>&nbsp&nbsp
+                          <input id="password" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" 
+                          title="Please enter atleast 8 characters, with one uppercase letter, one lowercase letter & one number" 
+                          required placeholder="Re-type Password" class="newi" /></label>
+                      </div>
+                      <div class="part part2">
+                        <label class="newl" for="fname" id="fname"><i class="fa fa-user fa-lg" aria-hidden="true"></i>&nbsp&nbsp
+                          <input id="fnamei" class="newi" required placeholder="Full Name" /></label>
+                        <label for="dob" id="dob" class="newl"><i class="fa fa-birthday-cake fa-lg" aria-hidden="true"></i>&nbsp&nbsp
+                          <input id="dob" onfocus="(this.type='date')" required placeholder="dd/mm/yyy" class="newi" /></label>
+                          <label class="newl" for="num" id="num"><i class="fa fa-phone fa-lg" aria-hidden="true"></i>&nbsp&nbsp
+                            <input id="numi" class="newi" required placeholder="Mobile number" pattern="\d{10}" title="10-digit number"/></label>
+                      </div>
+                        </fieldset>
                     <input id="submit" type="submit" value="Submit" />
             </div>
         </main>

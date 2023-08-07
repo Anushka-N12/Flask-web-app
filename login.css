@@ -3,7 +3,7 @@ body  {
     background-color: #262d42;
     color: #fff;
 }
-div  {
+#all  {
     background-color: #191d2b;
     margin: 0;
     position: absolute;
@@ -28,7 +28,6 @@ label  {
     padding: 10px;
 }
 .normal  {display: block;}
-.pad  {padding-bottom: 20px;}
 input  {
     width: 65%;
     height: 2em;
@@ -51,24 +50,38 @@ i  {padding: 0 20px;}
     transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
     z-index:1;
-    translate: 0 -20px;
+    translate: 0 -60px;
 }
 #signup  {opacity: 0.5;}
 #login  {font-size: x-large;}
 span  {transition: all 1s ease-in-out;}
-#fname  {
+.newl  {
     /* translate: 0 -400px; */
     transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
     visibility: hidden;
+    translate: 0 -10px;
 }
-#fnamei  {
+.newi  {
     transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
     width: 63%;
+    padding: 20px 0 15px 0;
+    translate: 0 -10px;
+    height: 1em;
+    border: none;
 }
-#fnamei::placeholder  {
+.newi::placeholder  {
     color: var(--ph-c);
     transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
 }
+.part  {
+    /* display: inline-block; */
+    width: 50%;
+    float: left;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+}
+#all  {width: 600px;}
+#part1  {translate: 140px 0;}
